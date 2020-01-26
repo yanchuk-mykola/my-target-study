@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        var newArray =[];
+
+        array.forEach(function (elem) {
+            newArray.push(elem *= elem);
+        })
+        console.log(newArray);
+
+        for(var i = 9;i < newArray.length; i++){
+            console.log(newArray[i]);
+        }
+
+        var myNumber = 2;
+
+        do{
+            console.log(myNumber);
+            myNumber *= 2;
+        }while (myNumber < 100);
+
+        newArray.push(1);
+        console.log(newArray);
+        newArray.pop();
+        console.log(newArray);
+        newArray.shift();
+        console.log(newArray);
+        newArray.unshift(92);
+        console.log(newArray);
+        newArray.splice(2, 3, 91, 92, 93);
+        console.log(newArray);
+        newArray2 = newArray.slice(0, 6);
+        console.log(newArray2);
+    </script>
+</body>
+</html>
